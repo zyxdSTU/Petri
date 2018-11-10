@@ -59,7 +59,7 @@
 
   ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/petri.PNG)
 
-- ##### 网分类系统(??)
+- ##### 网分类系统
 
   - 基本网系统($E/N$系统)
 
@@ -77,14 +77,21 @@
 
 ### 第三章
 
-- 基本网系统的定义
-  - $(B,E,F)$是一个基本网系统，$B$称为条件，$E$称为事件
-  - $c$称为网上的一个条件丛
-  - 事件$e \in E$在网上有发生权的条件是$^*e  \subseteq c \wedge e^* \cap c = \empty$,称为$c[e>$
-  - $c[e>c^{'}$,$e$在$c$发生的结果是将$c$变为其后继丛$c^{'}$,$c^{'}=(c-^*e)\cup e^*$
-  - ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/petri2.PNG)
+- ##### 基本网系统的定义
 
-- 局部确定性
+  - $(B,E,F)$是一个基本网系统，$B$称为条件，$E$称为事件
+
+  - $c$称为网上的一个条件丛
+
+  - 事件$e \in E$在网上有发生权的条件是$^*e  \subseteq c \wedge e^* \cap c = \empty$,称为$c[e>$
+
+  - $c[e>c^{'}$,$e$在$c$发生的结果是将$c$变为其后继丛$c^{'}$,$c^{'}=(c-^*e)\cup e^*$
+
+    ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/petri2.PNG)
+
+  - 四元组$N=(B,E;F,c_{in})$为基本网系统的条件是:$(B,E;F)$为条件和事件构成的有向网，$c_{in}$为网上的条件丛，$c_{in} \subseteq B$.基本网系统也称为$EN_-$系统
+
+- ##### 局部确定性
 
   ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/petri3.PNG)
 
@@ -92,7 +99,57 @@
 
     $e$在$c$有发生权是取决于$^*e以及e^*$
 
-- 
+- ##### 事件的基本关系(顺序，并发，冲突，冲撞)
+
+  - **顺序**
+
+    如果$c[e_1>$,但是$\neg c[e_2>$,而$c^{'}[e_2>$,其中$c[e_1>c^{'}$,就说$e_1$和$e_2$有顺序关系
+
+  - **冲突**
+
+    如果$c[e_1> \wedge \ c[e_2 >$,但是$\neg c[|e_1, e_2| >$,则$e_1,e_2$在$c$上互相冲突
+
+  - **冲撞**
+
+    若有$b \in B, c \in C, e \in E$,使得$^*e  \subseteq c$,而且$b \in c \cap e^*$,则说在情态$c$条件$b$处有冲撞
+
+  - **并发**(无冲撞的条件下)
+
+    $e_1$和$e_2$在情态$c$并发的充分必要条件是$^*e_1\cap ^*e_2=\empty \wedge ^*e_1 \cup ^*e_2 \subseteq c$
+
+  - ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/petri4.PNG)
+
+- ##### T图，S图
+
+  ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/petri5.PNG)
+
+- ##### 活性定理
+
+  ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/Petri6.PNG)
+
+  ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/Petri7.PNG)
+
+- ##### 哲学家就餐问题
+
+  ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/Petri8.PNG)
+
+  ![](https://raw.githubusercontent.com/zyxdSTU/Image/master/Petri9.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
