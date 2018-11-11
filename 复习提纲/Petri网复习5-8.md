@@ -43,9 +43,94 @@
 
   $\forall p \in P, M^{'}(p) = M(p) + \sum_{t\in T}I_+(p,t)(X(t)) - \sum_{t \in T}I_-(p,t)(X(t))$
 
+### 第六章 条件/事件系统
+
+- ##### 完全情态集的定义
+
+  基本网系统$(B,E;F,C_{in})$的完全情态集是满足下列条件的最小集合$[C_{in}]$
+
+  - $c_{in} \in [c_{in}]$
+  - 若$c_1 \in [c_{in}], c_2 \subseteq B$, 且有$u \subseteq E$,使得$c_1[u>c_2$或者$c_2<u]c_1$,则$c_2 \in [c_{in}]$
+
+- ##### 情态集
+
+  $EN_-$系统$N=(B,E;F,c_{in})$的情态集$C_N$是满足下列条件的最小集合
+
+  $c_{in} \in C_N$
+
+  若$c \in C_N, u \subseteq E, c^{'}\subseteq B且$c[u > c^{'}$,则c^{'} \in C_N$
+
+- ##### 完全可达关系是丛上的等价类
+
+  $(B,E;F,c_{in})$是$EN$系统，设$c_1, c_2 \subseteq B,$ 则$[c_1]=[c_2]$或者$[c_1]\cap[c_2]=\empty$
+
+- ##### C/E系统的定义
+
+  ![](https://github.com/zyxdSTU/Image/raw/master/Petri16.PNG)
+
+- ##### 如何理解C/E系统没有初始标识
+
+- ##### 外延公理
+
+  ![](https://github.com/zyxdSTU/Image/raw/master/Petri17.PNG)
+
+- ##### S_-完备T_-完备
+
+  ![](https://github.com/zyxdSTU/Image/raw/master/Petri18.PNG)
+
+### 第七章 同步论
+
+- #####  同步距离的定义
+
+  令$E_1,E_2 \subseteq E$为$C/E_-$系统$\sum=(B,E;F,C)$的任意两个非空事件子集，则$E_1和E_2$的同步距离$\sigma(E_1,E_2)$由下面公式给出
+
+  若有最大值 $\sigma(E_1, E_2)=\max_{p \in \pi} \{Occ(E_1,p)-Occ(E_2,p)\}$
+
+  若无最大值$\sigma(E_1, E_2)=\infty$
+
+  $p$为进程
+
+- ##### 同步距离的性质
+
+  ![](https://github.com/zyxdSTU/Image/raw/master/Petri19.PNG)
+
+- ##### 同步距离与系统行为
+
+  ![](https://github.com/zyxdSTU/Image/raw/master/Petri20.PNG)
+
+- ##### 基本集合$B_1$和条件集$B$的关系
+
+  ![](https://github.com/zyxdSTU/Image/raw/master/Petri21.PNG)
+
+- ##### 计算同步距离的方法
+
+### 第八章 同步论
+
+- ![](https://github.com/zyxdSTU/Image/raw/master/Petri22.PNG)
 
 
-### 第六章
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
